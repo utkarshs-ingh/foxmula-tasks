@@ -1,2 +1,2 @@
 Task - 2: Weather Application
-![](image.png)
+![](output.png)
