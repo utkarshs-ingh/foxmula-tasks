@@ -1,0 +1,13 @@
+.main {
+  margin: 18% auto;
+  text-align: center;
+  font-style: oblique;
+  color: azure;
+  font-size: 30px;
+}
+body {
+  background-color: black;
+  background-image: url('raw.githubusercontent.com/utkarsshs-ingh/foxmula-intern/main/image.png');
+  background-repeat: no-repeat;
+  background-size: 102%;
+}
