@@ -1,39 +1,7 @@
 import React, { useState } from 'react'
-import { Modal, Button, Form } from 'react-bootstrap'
-import { useDispatch, useSelector } from 'react-redux'
-import { weatherAPI } from '../actions/weatherAction'
-
-
-function MyVerticallyCenteredModal(props) {
-    const dispatch = useDispatch()
-    const [city, setCity] = useState('')
-    
-    const submitHandler = (e) => {
-        e.preventDefault()
-        dispatch(weatherAPI(city))
-    }
-
-    return (
-      <Modal
-        show={props.show}
-        onHide={props.onHide}
-        dialogClassName="modal-90w"
-        aria-labelledby="example-custom-modal-styling-title"
-        centered
-      >
-        <Modal.Body>
-        <Form onSubmit={submitHandler}>
-                <Form.Group controlId='cityname'>
-                    <Form.Control required type="text" placeholder="Enter City" value={city} onChange={e => setCity(e.target.value)}></Form.Control>
-                </Form.Group>
-                <Button type="submit" variant="primary">
-                    Submit
-                </Button>
-            </Form>
-        </Modal.Body>
-      </Modal>
-    );
-  }
+import { Button } from 'react-bootstrap'
+import { useSelector } from 'react-redux'
+import { PopUpModal } from './PopUpModal'
 
 
 export const WeatherPage = () => {
@@ -44,7 +12,6 @@ export const WeatherPage = () => {
 
     return (
         <>
-        {/* {error ? <h1>{error}</h1> : null} */}
         {error ? <h1>{error}</h1> : weatherStatus.weather ? 
         <div>
             { weatherStatus.main.temp }  °C<br></br>
@@ -56,7 +23,7 @@ export const WeatherPage = () => {
             Select City
         </Button>
 
-        <MyVerticallyCenteredModal
+        <PopUpModal
             show={modalShow}
             onHide={() => setModalShow(false)}
         />
