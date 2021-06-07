@@ -29,7 +29,6 @@ function CardDetail() {
                         color: "#2e2e2e"
                     }} />
                 </div>
-
                 <div className="cardinfo__students">
                     <AccountCircleIcon style={{ color: "#2e2e2e" }} />
                     <p>25 Students</p>
