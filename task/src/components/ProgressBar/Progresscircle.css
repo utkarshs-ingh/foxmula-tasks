@@ -1,0 +1,60 @@
+.progresscircle {
+    display: flex;
+    justify-content: space-evenly;
+    width: 578px;
+    height: 190px;
+    background-color: #e5e5e5;
+    margin: 40px;
+    border-radius: 11px;
+    padding-top: 13px;
+}
+
+.progresscircle__attendance {
+    width: 86.62px;
+    height: 86.62px;
+}
+
+.progresscircle__info {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #515151;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.progresscircle__heading {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #515151;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.progresscircle__tests {
+    width: 86.62px;
+    height: 86.62px;
+}
+
+.progresscircle__stars {
+    margin-top: 25px;
+}
+
+.progresscircle__rating {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: #515151;
+    margin-top: 6px;
+}

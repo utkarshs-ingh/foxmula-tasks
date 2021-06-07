@@ -1,0 +1,59 @@
+.cardinfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cardinfo__first {
+    width: 380px;
+    height: 190px;
+    border-radius: 11px;
+    background-color: #e5e5e5;
+    margin: 40px;
+    padding: 8px;
+}
+
+.cardinfo__batch {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.cardinfo__batch > p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2E2E2E;
+}
+
+.cardinfo__name {
+    display: flex;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.cardinfo__name > p, .cardinfo__students > p, .cardinfo__upcoming > p {
+    color: #515151;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+.cardinfo__name > img {
+   width: 28px;
+   border-radius: 50%;
+}
+
+.cardinfo__students {
+    display: flex;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.cardinfo__upcoming {
+    display: flex;
+    padding-left: 35px;
+    padding-top: 10px;
+}
