@@ -24,7 +24,7 @@ const LandingPage = () => {
   const [medicalData, updateMedicalData] = useState([]);
   const [medicalTag, updateMedicalTag] = useState("");
   const [favState, updatefavState] = useState(false);
-  const [lcData, updateLcData] = useState();
+  const [lcData, updateLcData] = useState([]);
 
   const checkTags = (val) => {
     if (medicalTag === "") return 1;
@@ -131,7 +131,7 @@ const LandingPage = () => {
       </Container>
 
       <DataListContainer>
-        {favState && localData ? (
+        {favState && lcData ? (
           lcData.map((val, index) => (
             <CardComponent key={index} data={val} idx={index} />
           ))
